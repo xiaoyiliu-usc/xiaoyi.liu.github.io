@@ -24,15 +24,16 @@
     /* General container */
     .container {
       width: 80%;
+      max-width: 1200px;
       margin: 0 auto;
-      padding: 20px;
+      padding: 10px;
     }
     
     /* Header Styles */
     header {
       background: #333;
       color: #fff;
-      padding: 40px 0;
+      padding: 20px 0;
       text-align: center;
     }
     
@@ -46,15 +47,46 @@
       font-weight: 300;
     }
     
-    /* About Section */
-    .about {
-      background: #fff;
-      padding: 40px 0;
+    /* Section Styling */
+    section {
+      padding: 20px 0;
     }
     
-    .about h2 {
+    section h2 {
       font-size: 28px;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
+      text-align: center;
+      color: #333;
+    }
+    
+    /* About Section */
+    .about .about-flex {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    
+    .about .about-image {
+      flex: 0 0 350px;
+      margin-right: 20px;
+    }
+    
+    .about .about-image img {
+      width: 350px;
+      height: 350px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    
+    .about .about-text {
+      flex: 1;
+    }
+    
+    .about .about-text p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #555;
+      margin-bottom: 10px;
     }
     
     .about ul {
@@ -64,21 +96,14 @@
     
     .about ul li {
       font-size: 18px;
+      margin-bottom: 5px;
     }
     
-    /* Research Section */
-    .research {
-      background: #f9f9f9;
-      padding: 40px 0;
-    }
-    
-    .research h2 {
-      font-size: 28px;
-      margin-bottom: 20px;
-    }
-    
+    /* Research Projects Section */
     .research ul {
       list-style-type: none;
+      margin: 0;
+      padding: 0;
     }
     
     .research ul li {
@@ -87,16 +112,6 @@
     }
     
     /* Publications Section */
-    .publications {
-      background: #fff;
-      padding: 40px 0;
-    }
-    
-    .publications h2 {
-      font-size: 28px;
-      margin-bottom: 20px;
-    }
-    
     .publications ol {
       padding-left: 20px;
     }
@@ -106,24 +121,11 @@
       margin-bottom: 10px;
     }
     
-    .publications a {
-      color: #4CAF50;
-      text-decoration: none;
-    }
-    
-    .publications a:hover {
-      text-decoration: underline;
-    }
-    
     /* Contact Section */
-    .contact {
-      background: #f9f9f9;
-      padding: 40px 0;
-    }
-    
-    .contact h2 {
-      font-size: 28px;
-      margin-bottom: 20px;
+    .contact p {
+      font-size: 18px;
+      margin-bottom: 5px;
+      text-align: center;
     }
     
     .contact a {
@@ -146,6 +148,19 @@
     footer p {
       font-size: 16px;
     }
+    
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      .about .about-flex {
+        flex-direction: column;
+        text-align: center;
+      }
+      
+      .about .about-image {
+        margin-right: 0;
+        margin-bottom: 15px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -157,18 +172,23 @@
   </header>
   
   <section class="about">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>
-        Hello! I am Liu Xiaoyi, a lecturer at the School of Traditional Chinese Medicine at Beijing University of Chinese Medicine. I received my Ph.D. in Engineering from the University of South Carolina in 2024. My research focuses on integrating AI with Traditional Chinese Medicine (TCM) to improve manufacturing and quality control processes. My work aims to bridge the gap between artificial intelligence and TCM through interdisciplinary research.
-      </p>
-      <p>Research Areas:</p>
-      <ul>
-        <li>AI-driven intelligent pharmaceutical manufacturing systems</li>
-        <li>Machine learning algorithms for TCM manufacturing processes</li>
-        <li>Generative AI for drug discovery</li>
-        <li>Multi-modal knowledge graphs for TCM</li>
-      </ul>
+    <div class="container about-flex">
+      <div class="about-image">
+        <img src="https://github.com/xiaoyiliu-usc/xiaoyi.liu.github.io/blob/main/images/IMG_7062.png?raw=true" alt="Xiaoyi Liu Avatar" />
+      </div>
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>
+          Hello! I am Liu Xiaoyi, a lecturer at the School of Traditional Chinese Medicine at Beijing University of Chinese Medicine. I received my Ph.D. in Engineering from the University of South Carolina in 2024. My research focuses on integrating AI with Traditional Chinese Medicine (TCM) to improve manufacturing and quality control processes. My work aims to bridge the gap between artificial intelligence and TCM through interdisciplinary research.
+        </p>
+        <p>Research Areas:</p>
+        <ul>
+          <li>AI-driven intelligent pharmaceutical manufacturing systems</li>
+          <li>Machine learning algorithms for TCM manufacturing processes</li>
+          <li>Generative AI for drug discovery</li>
+          <li>Multi-modal knowledge graphs for TCM</li>
+        </ul>
+      </div>
     </div>
   </section>
   
@@ -188,14 +208,10 @@
       <h2>Selected Publications</h2>
       <ol>
         <li>
-          <a href="https://doi.org/10.1093/bioinformatics/btae561" target="_blank">
-            Liu X, Ai C, Yang H, Dong R, Tang J, Zheng S, Guo F. RetroCaptioner: beyond attention in end-to-end retrosynthesis transformer via contrastively captioned learnable graph representation. Bioinformatics, 2024.
-          </a>
+          Liu X, Ai C, Yang H, Dong R, Tang J, Zheng S, Guo F. RetroCaptioner: beyond attention in end-to-end retrosynthesis transformer via contrastively captioned learnable graph representation. Bioinformatics, 2024.
         </li>
         <li>
-          <a href="https://doi.org/10.1093/bib/bbad393" target="_blank">
-            Liu, X., Yang, H., Ai, C., Ding, Y., Guo, F., & Tang, J. MVML-MPI: Multi-View Multi-Label Learning for Metabolic Pathway Inference. Briefings in Bioinformatics, 2023.
-          </a>
+          Liu, X., Yang, H., Ai, C., Ding, Y., Guo, F., & Tang, J. MVML-MPI: Multi-View Multi-Label Learning for Metabolic Pathway Inference. Briefings in Bioinformatics, 2023.
         </li>
       </ol>
     </div>
