@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Xiaoyi Liu - Lecturer, AI & Synthetic Biology Researcher" />
-  <title>My Personal Website - Xiaoyi Liu</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet" />
+  <meta name="description" content="Xiaoyi Liu - Personal Website" />
+  <title>Liu Xiaoyi - Personal Website</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
   <style>
-    /* Reset */
+    /* Reset styles */
     * {
       margin: 0;
       padding: 0;
@@ -16,278 +16,177 @@
     
     body {
       font-family: 'Roboto', sans-serif;
+      line-height: 1.6;
       background-color: #f4f4f4;
       color: #333;
-      line-height: 1.6;
     }
     
+    /* General container */
     .container {
-      width: 85%;
-      max-width: 1200px;
+      width: 80%;
       margin: 0 auto;
       padding: 20px;
     }
     
-    /* Header and Navigation */
+    /* Header Styles */
     header {
-      background-color: #2c3e50;
-      color: white;
-      padding: 20px 0;
+      background: #333;
+      color: #fff;
+      padding: 40px 0;
       text-align: center;
     }
     
     header h1 {
-      font-size: 2.8rem;
-      margin-bottom: 10px;
+      font-size: 36px;
+      font-weight: 500;
     }
     
-    nav {
-      margin: 15px 0;
-    }
-    
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-size: 1.1rem;
-      transition: color 0.3s ease;
-    }
-    
-    nav a:hover {
-      color: #3498db;
-    }
-    
-    /* Section Styling */
-    section {
-      padding: 60px 0;
-    }
-    
-    section h2 {
-      font-size: 2rem;
-      text-align: center;
-      margin-bottom: 40px;
-      color: #2c3e50;
+    header p {
+      font-size: 18px;
+      font-weight: 300;
     }
     
     /* About Section */
-    .intro {
-      background-color: #fff;
-      border-radius: 8px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-      display: flex;
-      align-items: center;
-      padding: 20px;
-      margin-bottom: 40px;
-      flex-wrap: wrap;
+    .about {
+      background: #fff;
+      padding: 40px 0;
     }
     
-    .intro img {
-      width: 350px;
-      height: 350px;
-      object-fit: cover;
-      border-radius: 8px;
-      margin-right: 20px;
+    .about h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
     }
     
-    .intro-text {
-      flex: 1;
-      min-width: 300px;
+    .about ul {
+      list-style-type: none;
+      margin: 10px 0;
     }
     
-    .intro-text p {
-      font-size: 1.1rem;
-      line-height: 1.8;
-      color: #555;
-      margin-top: 15px;
+    .about ul li {
+      font-size: 18px;
     }
     
-    /* Projects Section */
-    .projects .project-item {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 30px;
-      background-color: #fff;
-      padding: 15px;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-      flex-wrap: wrap;
+    /* Research Section */
+    .research {
+      background: #f9f9f9;
+      padding: 40px 0;
     }
     
-    .projects .project-item img {
-      width: 200px;
-      height: 120px;
-      object-fit: cover;
-      border-radius: 8px;
+    .research h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+    
+    .research ul {
+      list-style-type: none;
+    }
+    
+    .research ul li {
+      font-size: 18px;
       margin-bottom: 10px;
-    }
-    
-    .project-description {
-      flex: 1;
-      margin-left: 20px;
-      min-width: 250px;
-    }
-    
-    .project-description h3 {
-      font-size: 1.5rem;
-      color: #2c3e50;
-      margin-bottom: 10px;
-    }
-    
-    .project-description p {
-      font-size: 1rem;
-      color: #666;
     }
     
     /* Publications Section */
-    .publications ul {
-      list-style: none;
-      padding-left: 0;
+    .publications {
+      background: #fff;
+      padding: 40px 0;
     }
     
-    .publications li {
-      background-color: #fff;
-      margin-bottom: 15px;
-      padding: 15px;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    .publications h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
     }
     
-    .publications li a {
-      color: #3498db;
+    .publications ol {
+      padding-left: 20px;
+    }
+    
+    .publications ol li {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    
+    .publications a {
+      color: #4CAF50;
       text-decoration: none;
-      font-size: 1.1rem;
-      transition: text-decoration 0.3s ease;
     }
     
-    .publications li a:hover {
+    .publications a:hover {
       text-decoration: underline;
     }
     
     /* Contact Section */
-    .contact p {
-      font-size: 1.1rem;
-      text-align: center;
-      margin-bottom: 10px;
+    .contact {
+      background: #f9f9f9;
+      padding: 40px 0;
+    }
+    
+    .contact h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
     }
     
     .contact a {
-      color: #3498db;
+      color: #4CAF50;
       text-decoration: none;
-      font-size: 1.1rem;
-      transition: text-decoration 0.3s ease;
     }
     
     .contact a:hover {
       text-decoration: underline;
     }
     
-    /* Footer */
+    /* Footer Styles */
     footer {
-      background-color: #2c3e50;
-      color: white;
+      background: #333;
+      color: #fff;
       text-align: center;
       padding: 20px 0;
     }
     
     footer p {
-      font-size: 1rem;
-    }
-    
-    .social-links a {
-      margin: 0 10px;
-      color: #3498db;
-      font-size: 1.5rem;
-      text-decoration: none;
-      transition: color 0.3s ease;
-    }
-    
-    .social-links a:hover {
-      color: #1abc9c;
-    }
-    
-    /* Responsive Styles */
-    @media (max-width: 768px) {
-      .intro {
-        flex-direction: column;
-        text-align: center;
-      }
-      
-      .intro img {
-        margin-right: 0;
-        margin-bottom: 15px;
-      }
-      
-      .projects .project-item {
-        flex-direction: column;
-        align-items: center;
-      }
-      
-      .project-description {
-        margin-left: 0;
-        text-align: center;
-      }
+      font-size: 16px;
     }
   </style>
 </head>
 <body>
   <header>
     <div class="container">
-      <h1>Xiaoyi Liu</h1>
-      <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#publications">Publications</a>
-        <a href="#contact">Contact</a>
-      </nav>
+      <h1>Liu Xiaoyi</h1>
+      <p>Lecturer at Beijing University of Chinese Medicine | AI and Synthetic Biology Researcher</p>
     </div>
   </header>
   
-  <!-- About Me Section -->
-  <section id="about" class="intro">
+  <section class="about">
     <div class="container">
-      <img src="https://github.com/xiaoyiliu-usc/xiaoyi.liu.github.io/blob/main/images/IMG_7062.png?raw=true" alt="Xiaoyi Liu Avatar" />
-      <div class="intro-text">
-        <h2>About Me</h2>
-        <p>
-          I am a Lecturer at the School of Chinese Materia Medica, Beijing University of Chinese Medicine, and a native of Pinggu, Beijing. I obtained my Ph.D. in Engineering from the University of South Carolina in 2024. My interdisciplinary research focuses on leveraging artificial intelligence and traditional Chinese medicine information science to enhance intelligent manufacturing processes and quality control.
-        </p>
-        <p>
-          My research also spans AI-driven industrial intelligence and synthetic biology, aiming to accelerate innovative drug development and create generative AI solutions for scientific research.
-        </p>
-      </div>
-    </div>
-  </section>
-  
-  <!-- Projects Section -->
-  <section id="projects" class="projects">
-    <div class="container">
-      <h2>Projects</h2>
-      <div class="project-item">
-        <img src="https://via.placeholder.com/200" alt="Project 1" />
-        <div class="project-description">
-          <h3>Project Title 1</h3>
-          <p>
-            Description for Project 1 goes here. This project involves leveraging AI for intelligent manufacturing in traditional Chinese medicine.
-          </p>
-        </div>
-      </div>
-      <div class="project-item">
-        <img src="https://via.placeholder.com/200" alt="Project 2" />
-        <div class="project-description">
-          <h3>Project Title 2</h3>
-          <p>
-            Description for Project 2 goes here. This project focuses on generative AI and its application in drug discovery and synthetic biology.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-  <!-- Publications Section -->
-  <section id="publications" class="publications">
-    <div class="container">
-      <h2>Publications</h2>
+      <h2>About Me</h2>
+      <p>
+        Hello! I am Liu Xiaoyi, a lecturer at the School of Traditional Chinese Medicine at Beijing University of Chinese Medicine. I received my Ph.D. in Engineering from the University of South Carolina in 2024. My research focuses on integrating AI with Traditional Chinese Medicine (TCM) to improve manufacturing and quality control processes. My work aims to bridge the gap between artificial intelligence and TCM through interdisciplinary research.
+      </p>
+      <p>Research Areas:</p>
       <ul>
+        <li>AI-driven intelligent pharmaceutical manufacturing systems</li>
+        <li>Machine learning algorithms for TCM manufacturing processes</li>
+        <li>Generative AI for drug discovery</li>
+        <li>Multi-modal knowledge graphs for TCM</li>
+      </ul>
+    </div>
+  </section>
+  
+  <section class="research">
+    <div class="container">
+      <h2>Research Projects</h2>
+      <ul>
+        <li><strong>NSF Project:</strong> AI-driven composite materials manufacturing system (2021-2024)</li>
+        <li><strong>National Key R&D Program:</strong> Network models for industrial biomanufacturing (2022-2026)</li>
+        <li><strong>National Natural Science Foundation:</strong> Smart recognition of drug molecules (2022-2025)</li>
+      </ul>
+    </div>
+  </section>
+  
+  <section class="publications">
+    <div class="container">
+      <h2>Selected Publications</h2>
+      <ol>
         <li>
           <a href="https://doi.org/10.1093/bioinformatics/btae561" target="_blank">
             Liu X, Ai C, Yang H, Dong R, Tang J, Zheng S, Guo F. RetroCaptioner: beyond attention in end-to-end retrosynthesis transformer via contrastively captioned learnable graph representation. Bioinformatics, 2024.
@@ -298,29 +197,21 @@
             Liu, X., Yang, H., Ai, C., Ding, Y., Guo, F., & Tang, J. MVML-MPI: Multi-View Multi-Label Learning for Metabolic Pathway Inference. Briefings in Bioinformatics, 2023.
           </a>
         </li>
-        <!-- Additional publications can be added here -->
-      </ul>
+      </ol>
     </div>
   </section>
   
-  <!-- Contact Section -->
-  <section id="contact" class="contact">
+  <section class="contact">
     <div class="container">
-      <h2>Contact</h2>
+      <h2>Contact Information</h2>
       <p>Email: <a href="mailto:xiaoyi.liu@bucm.edu.cn">xiaoyi.liu@bucm.edu.cn</a></p>
       <p>WeChat: 15501188186</p>
-      <p>Address: School of Chinese Materia Medica, Beijing University of Chinese Medicine, Liangxiang University Town, Fangshan District, Beijing, 102488</p>
     </div>
   </section>
   
-  <!-- Footer -->
   <footer>
     <div class="container">
       <p>&copy; 2024 Xiaoyi Liu. All Rights Reserved.</p>
-      <div class="social-links">
-        <a href="https://github.com/xiaoyi.liu" target="_blank">GitHub</a>
-        <a href="https://www.linkedin.com/in/your-profile" target="_blank">LinkedIn</a>
-      </div>
     </div>
   </footer>
 </body>
